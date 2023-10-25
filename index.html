@@ -1,11 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Length Converters</title>
-</head>
-<body>
-    
-</body>
+<html>
+  <head>
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2 style="letter-spacing: 7px; line-height: 40px">
+      Lengths Converter
+    </h2>inches, 
+    feet, yards, kilometers, and miles.
+      <div class="converter">
+        <form class="container">
+          <label for="meter">Meter</label>
+          <input type="number" id="meter" oninput="metAndCen()" />
+        </form>
+        <form class="container">
+          <label for="centimeter">Centimeters</label>
+          <input type="number" id="centimeter" oninput="metAndInch()" />
+        </form>
+        <form class="container">
+          <label for="inch">Inches</label>
+          <input type="number" id="inch" oninput="cenAndInch()" />
+        </form>
+        <form class="container">
+          <label for="inch">Inches</label>
+          <input type="number" id="inch" oninput="cenToMet()" />
+        </form>
+        <form class="container">
+          <label for="inch">Inches</label>
+          <input type="number" id="inch" oninput="cenToMet()" />
+        </form>
+        <form class="container">
+          <label for="inch">Inches</label>
+          <input type="number" id="inch" oninput="cenToMet()" />
+        </form>
+      </div>
+    <script src="./converter.js"></script>
+  </body>
 </html>

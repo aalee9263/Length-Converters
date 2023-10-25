@@ -5,36 +5,35 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h2 style="letter-spacing: 7px; line-height: 40px">
-      Lengths Converter
-    </h2>inches, 
-    feet, yards, kilometers, and miles.
-      <div class="converter">
-        <form class="container">
-          <label for="meter">Meter</label>
-          <input type="number" id="meter" oninput="metAndCen()" />
-        </form>
-        <form class="container">
-          <label for="centimeter">Centimeters</label>
-          <input type="number" id="centimeter" oninput="metAndInch()" />
-        </form>
-        <form class="container">
-          <label for="inch">Inches</label>
-          <input type="number" id="inch" oninput="cenAndInch()" />
-        </form>
-        <form class="container">
-          <label for="inch">Inches</label>
-          <input type="number" id="inch" oninput="cenToMet()" />
-        </form>
-        <form class="container">
-          <label for="inch">Inches</label>
-          <input type="number" id="inch" oninput="cenToMet()" />
-        </form>
-        <form class="container">
-          <label for="inch">Inches</label>
-          <input type="number" id="inch" oninput="cenToMet()" />
-        </form>
+    <h2 style="letter-spacing: 7px; line-height: 40px">Lengths Converter</h2>
+    <div class="converter">
+      <form class="container">
+        <label for="meters">Meters:</label>
+      <input type="number" id="meters" oninput="convertLength('meters')" />
+      </form>
+      <form class="container"><label for="centimeters">Centimeters:</label>
+        <input type="number" id="centimeters" oninput="convertLength('centimeters')" />
+        </form>  
+      <form class="container"><label for="inches">Inches:</label>
+        <input type="number" id="inches" oninput="convertLength('inches')" />
+        </form>  
+      <form class="container"><label for="feet">Feet:</label>
+        <input type="number" id="feet" oninput="convertLength('feet')" />
+        </form>  
+      <form class="container"><label for="yards">Yards:</label>
+        <input type="number" id="yards" oninput="convertLength('yards')" />
+        </form>  
+      <form class="container"><label for="miles">Miles:</label>
+        <input type="number" id="miles" oninput="convertLength('miles')" />
+        </form>  
+      <form class="container"><label for="kilometers">Kilometers:</label>
+        <input type="number" id="kilometers" oninput="convertLength('kilometers')" />
+        </form>  
+      <form class="container"><label for="millimeters">Millimeters:</label>
+        <input type="number" id="millimeters" oninput="convertLength('millimeters')" />
+      </form>
       </div>
-    <script src="./converter.js"></script>
+ </div>
+    <script src="./script.js"></script>
   </body>
 </html>
